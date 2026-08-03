@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Software - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">CLIMAORO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../collabora/" class="nav-link">Collabora</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../documentazione/" class="nav-link">Documentazione</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../hardware/" class="nav-link">Hardware</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../sistema/" class="nav-link">Il sistema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Software</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../stato/" class="nav-link">Stato e sviluppi</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../sistema/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../stato/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#software" class="nav-link">Software</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#architettura" class="nav-link">Architettura</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#comunicazione" class="nav-link">Comunicazione</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#entita-esposte-in-home-assistant" class="nav-link">Entità esposte in Home Assistant</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#logica-di-controllo-centralizzata" class="nav-link">Logica di controllo centralizzata</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#segnalazioni-led" class="nav-link">Segnalazioni LED</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="software">Software</h1>
+<h2 id="architettura">Architettura</h2>
+<p>La logica di controllo è centralizzata e si integra con Home Assistant. I dispositivi (termostati e collettore) utilizzano firmware basato su ESPHome, che permette un'integrazione nativa con Home Assistant e una configurazione flessibile.</p>
+<h2 id="comunicazione">Comunicazione</h2>
+<p>Il sistema utilizza due canali di comunicazione:</p>
+<table>
+<thead>
+<tr>
+<th>Canale</th>
+<th>Protocollo</th>
+<th>Scopo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primario</td>
+<td>WiFi + API ESPHome</td>
+<td>Configurazione, telemetria, comandi da Home Assistant</td>
+</tr>
+<tr>
+<td>Fallback</td>
+<td>ESP-NOW</td>
+<td>Comunicazione diretta termostati ↔ collettore (senza router)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="entita-esposte-in-home-assistant">Entità esposte in Home Assistant</h2>
+<table>
+<thead>
+<tr>
+<th>Entità</th>
+<th>Tipo</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>climate.*_climatizzazione</td>
+<td>climate</td>
+<td>Termostato</td>
+</tr>
+<tr>
+<td>sensor.*_temperatura_reale</td>
+<td>sensor</td>
+<td>Temperatura ambiente</td>
+</tr>
+<tr>
+<td>sensor.*_umidita_reale</td>
+<td>sensor</td>
+<td>Umidità ambiente</td>
+</tr>
+<tr>
+<td>sensor.*_stato_sistema</td>
+<td>sensor</td>
+<td>Stato operativo</td>
+</tr>
+<tr>
+<td>sensor.*_ultimo_errore</td>
+<td>sensor</td>
+<td>Ultimo errore rilevato</td>
+</tr>
+<tr>
+<td>sensor.*_cronologia_errori</td>
+<td>sensor</td>
+<td>Storico errori</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>umber.*_temperatura_salvata</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>umber</td>
+<td>Setpoint di riferimento</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>umber.*_soglia_umidita</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>umber</td>
+<td>Soglia per blocco funzionamento</td>
+<td></td>
+</tr>
+<tr>
+<td>switch.*_modalita_controllata</td>
+<td>switch</td>
+<td>Abilitazione controllo centralizzato</td>
+</tr>
+<tr>
+<td>utton.*_rinnovo_modalita</td>
+<td>utton</td>
+<td>Rinnovo timer controllo centralizzato</td>
+</tr>
+<tr>
+<td>utton.*_reset_allarme_collettore</td>
+<td>utton</td>
+<td>Reset allarme collettore</td>
+</tr>
+<tr>
+<td>utton.*_reset_allarme_circolatore</td>
+<td>utton</td>
+<td>Reset allarme circolatore</td>
+</tr>
+<tr>
+<td>utton.*_reset_errori</td>
+<td>utton</td>
+<td>Reset errori</td>
+</tr>
+<tr>
+<td>light.*_led_stato</td>
+<td>light</td>
+<td>LED di segnalazione</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logica-di-controllo-centralizzata">Logica di controllo centralizzata</h2>
+<h3 id="parametri-configurabili-per-zona">Parametri configurabili per zona</h3>
+<table>
+<thead>
+<tr>
+<th>Parametro</th>
+<th>Tipo</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Peso</td>
+<td>Numero</td>
+<td>Importanza della zona</td>
+</tr>
+<tr>
+<td>Inclusione</td>
+<td>Booleano</td>
+<td>Inclusione/esclusione della zona</td>
+</tr>
+<tr>
+<td>Delta guardia giorno</td>
+<td>Numero</td>
+<td>Temperatura di mantenimento (fascia giorno)</td>
+</tr>
+<tr>
+<td>Delta guardia notte</td>
+<td>Numero</td>
+<td>Temperatura di mantenimento (fascia notte)</td>
+</tr>
+<tr>
+<td>Delta lavoro giorno</td>
+<td>Numero</td>
+<td>Temperatura di funzionamento (fascia giorno)</td>
+</tr>
+<tr>
+<td>Delta lavoro notte</td>
+<td>Numero</td>
+<td>Temperatura di funzionamento (fascia notte)</td>
+</tr>
+<tr>
+<td>Temperatura salvata</td>
+<td>Numero</td>
+<td>Setpoint di riferimento</td>
+</tr>
+<tr>
+<td>Soglia pesi</td>
+<td>Numero</td>
+<td>Soglia di attivazione collettiva</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flusso-decisionale">Flusso decisionale</h3>
+<ol>
+<li><strong>Raccolta dati:</strong> temperatura reale, setpoint, azione, modalità per ogni zona</li>
+<li><strong>Calcolo domanda:</strong> per ogni zona, guardia = setpoint - delta_guardia; se temp &lt;= guardia - 0.5 → richiede calore; somma pesi</li>
+<li><strong>Priorità:</strong> zone già in funzione hanno priorità</li>
+<li><strong>Decisione collettiva:</strong> se somma_pesi &gt;= soglia_pesi → attiva tutte</li>
+<li><strong>Emergenza individuale:</strong> se temp &lt;= guardia - 0.4 → attiva singola zona</li>
+<li><strong>Esecuzione:</strong> imposta setpoint di lavoro per le zone da attivare, setpoint di guardia per le zone da disattivare</li>
+</ol>
+<h2 id="segnalazioni-led">Segnalazioni LED</h2>
+<p>Le segnalazioni variano a seconda della configurazione e possono essere personalizzate. A titolo di esempio:</p>
+<table>
+<thead>
+<tr>
+<th>Stato</th>
+<th>Segnalazione tipica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Funzionamento attivo</td>
+<td>Colore fisso</td>
+</tr>
+<tr>
+<td>Standby</td>
+<td>Colore fisso diverso</td>
+</tr>
+<tr>
+<td>Problemi minori</td>
+<td>Lampeggio lento</td>
+</tr>
+<tr>
+<td>Errori gravi</td>
+<td>Lampeggio rapido</td>
+</tr>
+<tr>
+<td>Allarmi</td>
+<td>Lampeggio specifico</td>
+</tr>
+</tbody>
+</table>
+<p>Le funzioni di segnalazione sono configurabili e adattabili alle proprie esigenze.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
