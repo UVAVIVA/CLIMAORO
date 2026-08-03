@@ -6,6 +6,10 @@ CLIMAORO è un sistema completo per il controllo centralizzato del riscaldamento
 
 ---
 
+**🇬🇧 [English version](https://UVAVIVA.github.io/CLIMAOROen/)**
+
+---
+
 ## La storia di questo progetto
 
 Ho iniziato questo progetto a marzo 2026. Non sapevo programmare. Non sapevo saldare. Non sapevo stampare in 3D. Avevo solo un problema da risolvere e la voglia di imparare.
