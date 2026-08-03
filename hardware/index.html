@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Hardware - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">CLIMAORO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../collabora/" class="nav-link">Collabora</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../documentazione/" class="nav-link">Documentazione</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Hardware</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../sistema/" class="nav-link">Il sistema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../software/" class="nav-link">Software</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../stato/" class="nav-link">Stato e sviluppi</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../documentazione/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../sistema/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#hardware" class="nav-link">Hardware</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#note-generali-sui-pin" class="nav-link">Note generali sui pin</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#il-collettore" class="nav-link">Il collettore</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#i-termostati" class="nav-link">I termostati</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="hardware">Hardware</h1>
+<h2 id="note-generali-sui-pin">Note generali sui pin</h2>
+<p>I pin indicati negli schemi e nelle tabelle sono esempi basati sulle configurazioni attuali. Ogni installazione può variare in base al modello di scheda utilizzato (ESP32-S3, ESP32-C6, ESP32-C3, formato mini o standard). I pin vanno adattati al proprio hardware e alle proprie esigenze.</p>
+<h2 id="il-collettore">Il collettore</h2>
+<h3 id="microcontrollori-compatibili">Microcontrollori compatibili</h3>
+<table>
+<thead>
+<tr>
+<th>Chip</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ESP32-C6</strong></td>
+<td>Utilizzato attualmente, supporto WiFi + ESP-NOW</td>
+</tr>
+<tr>
+<td><strong>ESP32-S3</strong></td>
+<td>Alternativa valida, maggior potenza di calcolo</td>
+</tr>
+<tr>
+<td><strong>ESP32-C3</strong></td>
+<td>Compatibile, minori risorse ma sufficiente</td>
+</tr>
+</tbody>
+</table>
+<h3 id="componenti-e-funzioni">Componenti e funzioni</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Quantità</th>
+<th>Funzione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontrollore</td>
+<td>1</td>
+<td>ESP32-C6/S3/C3 con WiFi + ESP-NOW</td>
+</tr>
+<tr>
+<td>Relè</td>
+<td>4+</td>
+<td>Comando valvole zone</td>
+</tr>
+<tr>
+<td>Relè</td>
+<td>1</td>
+<td>Comando circolatore</td>
+</tr>
+<tr>
+<td>Optoisolatori</td>
+<td>4+</td>
+<td>Feedback valvole</td>
+</tr>
+<tr>
+<td>LED</td>
+<td>1</td>
+<td>Segnalazione stato</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logica-di-funzionamento">Logica di funzionamento</h3>
+<table>
+<thead>
+<tr>
+<th>Funzione</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ricezione comandi</td>
+<td>Riceve comandi dai termostati via ESP-NOW o WiFi</td>
+</tr>
+<tr>
+<td>Conferme</td>
+<td>Invia conferme ai termostati</td>
+</tr>
+<tr>
+<td>Allarmi</td>
+<td>Invia allarmi in caso di anomalie</td>
+</tr>
+<tr>
+<td>Gestione circolatore</td>
+<td>Logiche di temporizzazione personalizzabili</td>
+</tr>
+<tr>
+<td>Timeout sicurezza</td>
+<td>Valuta lo spegnimento dopo tempo prestabilito</td>
+</tr>
+<tr>
+<td>Controllo coerenza</td>
+<td>Verifica perpetua tra stato richiesto e stato effettivo</td>
+</tr>
+<tr>
+<td>Feedback</td>
+<td>Lettura optoisolatori per verifica stato valvole</td>
+</tr>
+</tbody>
+</table>
+<h2 id="i-termostati">I termostati</h2>
+<h3 id="microcontrollori-compatibili_1">Microcontrollori compatibili</h3>
+<table>
+<thead>
+<tr>
+<th>Chip</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ESP32-S3</strong></td>
+<td>Consigliato per modelli con display (es. formato Zero mini)</td>
+</tr>
+<tr>
+<td><strong>ESP32-C6</strong></td>
+<td>Per modelli senza display o con funzionalità base</td>
+</tr>
+<tr>
+<td><strong>ESP32-C3</strong></td>
+<td>Per modelli compatti o ripetitori</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modelli-e-installazioni">Modelli e installazioni</h3>
+<table>
+<thead>
+<tr>
+<th>Modello</th>
+<th>Installazione</th>
+<th>Funzione specifica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mobile</strong></td>
+<td>Presa elettrica</td>
+<td>Plug-and-play, soluzione standard</td>
+</tr>
+<tr>
+<td><strong>Interno 503</strong></td>
+<td>Dentro scatola 503</td>
+<td>Interfaccia utente locale</td>
+</tr>
+<tr>
+<td><strong>Affiancato 503</strong></td>
+<td>Affiancato a scatola 503</td>
+<td>Modulo compatto, controlli essenziali</td>
+</tr>
+<tr>
+<td><strong>Ripetitore</strong></td>
+<td>Affiancato o dentro 503</td>
+<td>Estensione rete ESP-NOW</td>
+</tr>
+<tr>
+<td><strong>Pannello</strong></td>
+<td>Affiancato o dentro 503</td>
+<td>Controllo centralizzato, menu completo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="caratteristiche-comuni">Caratteristiche comuni</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Funzione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontrollore</td>
+<td>Elaborazione e comunicazione (S3, C6 o C3)</td>
+</tr>
+<tr>
+<td>Sensore</td>
+<td>Rilevamento temperatura e umidità ambiente</td>
+</tr>
+<tr>
+<td>LED</td>
+<td>Segnalazioni di stato</td>
+</tr>
+<tr>
+<td>Comunicazione</td>
+<td>WiFi + ESP-NOW (primario e fallback)</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
