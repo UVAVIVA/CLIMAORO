@@ -29,14 +29,6 @@ theme:
     - search.suggest
     - search.highlight
 
-extra:
-  alternate:
-    - name: Italiano
-      link: /
-      lang: it
-    - name: English
-      link: /en/
-      lang: en
 
 markdown_extensions:
   - admonition
