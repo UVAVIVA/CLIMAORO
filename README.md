@@ -8,9 +8,9 @@ CLIMAORO è un sistema completo per il controllo centralizzato del riscaldamento
 
 ## 🌐 Sito web
 
-La documentazione completa è disponibile su:
+[https://UVAVIVA.github.io/CLIMAORO/](https://UVAVIVA.github.io/CLIMAORO/)
 
-👉 **[https://UVAVIVA.github.io/CLIMAORO/](https://UVAVIVA.github.io/CLIMAORO/)**
+**🇬🇧 English version:** [https://UVAVIVA.github.io/CLIMAOROen/](https://UVAVIVA.github.io/CLIMAOROen/)
 
 ---
 
