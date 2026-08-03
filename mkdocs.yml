@@ -1,1 +1,61 @@
-site_name: My Docs
+site_name: CLIMAORO
+site_description: Sistema di termoregolazione a zone open source
+site_url: https://uvaviva.github.io/CLIMAORO/
+repo_url: https://github.com/UVAVIVA/CLIMAORO
+repo_name: UVAVIVA/CLIMAORO
+
+theme:
+  name: material
+  language: it
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Passa alla modalità scura
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Passa alla modalità chiara
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+extra:
+  alternate:
+    - name: Italiano
+      link: /
+      lang: it
+    - name: English
+      link: /en/
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Il sistema: sistema.md
+  - Hardware: hardware.md
+  - Software: software.md
+  - Stato e sviluppi: stato.md
+  - Collabora: collabora.md
+  - Documentazione: documentazione.md
