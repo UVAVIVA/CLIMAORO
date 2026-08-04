@@ -24,6 +24,8 @@ I pin indicati negli schemi e nelle tabelle sono esempi basati sulle configurazi
 | Optoisolatori | 4+ | Feedback valvole |
 | LED | 1 | Segnalazione stato |
 
+<img src="../images/collettore/1.jpg" alt="Collettore 1" width="32%"> <img src="../images/collettore/2.jpg" alt="Collettore 2" width="32%"> <img src="../images/collettore/3.jpg" alt="Collettore 3" width="32%">
+
 ### Logica di funzionamento
 
 | Funzione | Descrizione |
@@ -56,6 +58,8 @@ I pin indicati negli schemi e nelle tabelle sono esempi basati sulle configurazi
 | **Ripetitore** | Affiancato o dentro 503 | Estensione rete ESP-NOW |
 | **Pannello** | Affiancato o dentro 503 | Controllo centralizzato, menu completo |
 
+<img src="../images/termostati/1.jpg" alt="Termostato 1" width="32%"> <img src="../images/termostati/2.jpg" alt="Termostato 2" width="32%"> <img src="../images/termostati/3.jpg" alt="Termostato 3" width="32%">
+
 ### Caratteristiche comuni
 
 | Componente | Funzione |
@@ -64,3 +68,11 @@ I pin indicati negli schemi e nelle tabelle sono esempi basati sulle configurazi
 | Sensore | Rilevamento temperatura e umidità ambiente |
 | LED | Segnalazioni di stato |
 | Comunicazione | WiFi + ESP-NOW (primario e fallback) |
+
+### Case stampa 3D termostato mobile
+
+Il case del termostato mobile è disponibile per la stampa 3D.
+
+- **File:** [termostato-ovale-19-c6.3mf](files/termostato-ovale-19-c6.3mf)
+- **Materiale consigliato:** PETG
+- **Nota:** il file può essere aperto solo con **OrcaSlicer** o **Flash Studio**

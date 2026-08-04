@@ -54,6 +54,12 @@ CLIMAORO è un sistema che:
 - [Sensore di temperatura e umidità (SHT4x)](https://it.aliexpress.com/item/1005009954170157.html)
 - [Caricatore / alimentazione](https://it.aliexpress.com/item/1005008268805480.html)
 
+**Case stampa 3D termostato mobile:**
+
+- [termostato-ovale-19-c6.3mf](docs/files/termostato-ovale-19-c6.3mf)
+- Materiale consigliato: **PETG**
+- Nota: il file può essere aperto solo con **OrcaSlicer** o **Flash Studio**
+
 ---
 
 ## 🧩 Componenti principali
