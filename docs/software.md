@@ -84,6 +84,8 @@ I file di configurazione ESPHome sono pubblici su GitHub nel repository [climaor
 | Config principale termostato (esempio inglese) | [termostato_example.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/termostato_example.yaml) |
 | Package termostato | [packages/termostato.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/termostato.yaml) |
 | Package termostato con display | [packages/termostato_display.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/termostato_display.yaml) |
+| Config principale collettore (esempio italiano) | [collettore_esempio.yaml](https://github.com/UVAVIVA/CLIMAORO/blob/main/collettore_esempio.yaml) |
+| Config principale collettore (esempio inglese) | [collettore_example.yaml](https://github.com/UVAVIVA/CLIMAOROen/blob/main/collettore_example.yaml) |
 | Package collettore | [packages/collettore.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/collettore.yaml) |
 | Package zona | [packages/zona.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/zona.yaml) |
 

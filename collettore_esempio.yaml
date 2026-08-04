@@ -1,0 +1,129 @@
+# ============================================================
+# FILE PRINCIPALE D'ESEMPIO - Collettore
+# Include il package packages/collettore.yaml
+# Copia questo file e modifica le substitution per ogni device
+# ============================================================
+substitutions:
+  static_ip: "192.168.1.229"
+  num_zones: "4"
+  circolatore_pin: "GPIO3"
+  led_pin: "GPIO8"
+
+  # Zona 1
+  z1_nome: "Zona 1"
+  z1_pin: "GPIO0"
+  z1_fb: "GPIO20"
+  z1_addr: "58:E6:C5:17:33:D8"
+  z1_mac: "58:E6:C5:17:33:D8"
+  z1_pref: ""
+  # Zona 2
+  z2_nome: "Zona 2"
+  z2_pin: "GPIO1"
+  z2_fb: "GPIO21"
+  z2_addr: "3C:0F:02:E1:9F:1C"
+  z2_mac: "3C:0F:02:E1:9F:1C"
+  z2_pref: ""
+  # Zona 3
+  z3_nome: "Zona 3"
+  z3_pin: "GPIO10"
+  z3_fb: "GPIO22"
+  z3_addr: "10:BD:A3:AC:AC:94"
+  z3_mac: "10:BD:A3:AC:AC:94"
+  z3_pref: ""
+  # Zona 4
+  z4_nome: "Zona 4"
+  z4_pin: "GPIO11"
+  z4_fb: "GPIO23"
+  z4_addr: "38:44:BE:45:C3:20"
+  z4_mac: "38:44:BE:45:C3:20"
+  z4_pref: ""
+  # Zona 5
+  z5_nome: "Zona 5"
+  z5_pin: "GPIO4"
+  z5_fb: "GPIO24"
+  z5_addr: ""
+  z5_mac: ""
+  z5_pref: ""
+  # Zona 6
+  z6_nome: "Zona 6"
+  z6_pin: "GPIO5"
+  z6_fb: "GPIO25"
+  z6_addr: ""
+  z6_mac: ""
+  z6_pref: ""
+  # Zona 7
+  z7_nome: "Zona 7"
+  z7_pin: "GPIO6"
+  z7_fb: "GPIO26"
+  z7_addr: ""
+  z7_mac: ""
+  z7_pref: ""
+  # Zona 8
+  z8_nome: "Zona 8"
+  z8_pin: "GPIO7"
+  z8_fb: "GPIO27"
+  z8_addr: ""
+  z8_mac: ""
+  z8_pref: ""
+
+  device_name: "collettore-esempio"
+  device_friendly: "Collettore Esempio"
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${device_friendly}
+  project:
+    name: UVAVIVA.CLIMA_ORO
+    version: "BETA2026"
+
+esp32:
+  variant: Esp32c6
+  flash_size: 4MB
+  framework:
+    type: esp-idf
+
+wifi:
+  networks:
+    - ssid: !secret wifi_ssid2
+      password: !secret wifi_password2
+      channel: 9
+      manual_ip:
+        static_ip: ${static_ip}
+        gateway: 192.168.1.1
+        subnet: 255.255.255.0
+  reboot_timeout: 0s
+  power_save_mode: NONE
+  fast_connect: false
+
+api:
+  encryption:
+    key: !secret api_key
+  reboot_timeout: 0s
+
+ota:
+  - platform: esphome
+
+logger:
+
+debug:
+  update_interval: 1min
+
+text_sensor:
+  - platform: version
+    name: "Versione Firmware"
+  - platform: template
+    name: "Stato Sistema"
+    id: stato_sistema
+    icon: "mdi:information-outline"
+  - platform: template
+    name: "Cronologia Errori"
+    id: cronologia_errori
+    icon: "mdi:format-list-bulleted"
+    entity_category: diagnostic
+  - platform: template
+    name: "Ultimo Messaggio ESP-NOW"
+    id: ultimo_espnow_coll
+    icon: "mdi:message-receive-text"
+
+packages:
+  - !include packages/collettore.yaml

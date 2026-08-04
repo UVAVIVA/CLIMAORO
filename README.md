@@ -129,6 +129,10 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 - [Modulo relè (4+ canali)](https://it.aliexpress.com/item/1005007538301230.html)
 - [Optoisolatori](https://it.aliexpress.com/item/1005009598584430.html)
 
+**Configurazione per la compilazione:**
+
+- [Config principale collettore (esempio italiano)](https://github.com/UVAVIVA/CLIMAORO/blob/main/collettore_esempio.yaml)
+
 ---
 
 ## 📜 Licenza
