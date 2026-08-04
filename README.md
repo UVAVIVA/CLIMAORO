@@ -26,6 +26,12 @@ CLIMAORO è un sistema che:
 
 ---
 
+## 📷 Termostati
+
+![Termostato 1](images/termostati/1.jpg) ![Termostato 2](images/termostati/2.jpg) ![Termostato 3](images/termostati/3.jpg)
+
+---
+
 ## 🔧 Stato del progetto
 
 | Funzionalità | Stato |
@@ -38,6 +44,12 @@ CLIMAORO è un sistema che:
 
 ---
 
+## 🎛️ Termostato encoder integrato con 503
+
+![Termostato encoder 503 1](images/termostato-encoder-503/1.jpg) ![Termostato encoder 503 2](images/termostato-encoder-503/2.jpg)
+
+---
+
 ## 🧩 Componenti principali
 
 | Componente | Descrizione |
@@ -45,6 +57,12 @@ CLIMAORO è un sistema che:
 | **Termostati** | Dispositivi ESP32 (S3/C6/C3) con sensori, LED, e diverse modalità di installazione (presa elettrica, scatola 503) |
 | **Collettore** | Unità centrale con relè per valvole e circolatore, con feedback optoisolato |
 | **Logica centralizzata** | Controllo intelligente che decide quando accendere la pompa in base alla domanda aggregata |
+
+---
+
+## 🔌 Termostato mobile
+
+![Termostato mobile 1](images/termostato-mobile/1.jpg) ![Termostato mobile 2](images/termostato-mobile/2.jpg) ![Termostato mobile 3](images/termostato-mobile/3.jpg)
 
 ---
 
@@ -76,6 +94,12 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 4. Invia una **pull request**
 
 📌 **Scopri di più:** [https://UVAVIVA.github.io/CLIMAORO/collabora/](https://UVAVIVA.github.io/CLIMAORO/collabora/)
+
+---
+
+## 🛠️ Collettore
+
+![Collettore 1](images/collettore/1.jpg) ![Collettore 2](images/collettore/2.jpg) ![Collettore 3](images/collettore/3.jpg)
 
 ---
 
