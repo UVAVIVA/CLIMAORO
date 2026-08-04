@@ -28,7 +28,7 @@ CLIMAORO è un sistema che:
 
 ## 📷 Termostati
 
-![Termostato 1](images/termostati/1.jpg) ![Termostato 2](images/termostati/2.jpg) ![Termostato 3](images/termostati/3.jpg)
+<img src="images/termostati/1.jpg" alt="Termostato 1" width="32%"> <img src="images/termostati/2.jpg" alt="Termostato 2" width="32%"> <img src="images/termostati/3.jpg" alt="Termostato 3" width="32%">
 
 ---
 
@@ -46,7 +46,7 @@ CLIMAORO è un sistema che:
 
 ## 🎛️ Termostato encoder integrato con 503
 
-![Termostato encoder 503 1](images/termostato-encoder-503/1.jpg) ![Termostato encoder 503 2](images/termostato-encoder-503/2.jpg)
+<img src="images/termostato-encoder-503/1.jpg" alt="Termostato encoder 503 1" width="49%"> <img src="images/termostato-encoder-503/2.jpg" alt="Termostato encoder 503 2" width="49%">
 
 ---
 
@@ -62,7 +62,7 @@ CLIMAORO è un sistema che:
 
 ## 🔌 Termostato mobile
 
-![Termostato mobile 1](images/termostato-mobile/1.jpg) ![Termostato mobile 2](images/termostato-mobile/2.jpg) ![Termostato mobile 3](images/termostato-mobile/3.jpg)
+<img src="images/termostato-mobile/1.jpg" alt="Termostato mobile 1" width="32%"> <img src="images/termostato-mobile/2.jpg" alt="Termostato mobile 2" width="32%"> <img src="images/termostato-mobile/3.jpg" alt="Termostato mobile 3" width="32%">
 
 ---
 
@@ -99,7 +99,7 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 
 ## 🛠️ Collettore
 
-![Collettore 1](images/collettore/1.jpg) ![Collettore 2](images/collettore/2.jpg) ![Collettore 3](images/collettore/3.jpg)
+<img src="images/collettore/1.jpg" alt="Collettore 1" width="32%"> <img src="images/collettore/2.jpg" alt="Collettore 2" width="32%"> <img src="images/collettore/3.jpg" alt="Collettore 3" width="32%">
 
 ---
 
