@@ -5,7 +5,7 @@
 # ============================================================
 substitutions:
   collettore_mac: "AA:00:AA:00:AA:00"
-  static_ip: "192.168.1.203"
+  static_ip: "192.168.1.101"
   i2c_sda: "0"
   i2c_scl: "1"
   led_pin: "8"
