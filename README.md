@@ -44,9 +44,15 @@ CLIMAORO è un sistema che:
 
 ---
 
-## 🎛️ Termostato encoder integrato con 503
+## 🔌 Termostato mobile
 
-<img src="images/termostato-encoder-503/1.jpg" alt="Termostato encoder 503 1" width="49%"> <img src="images/termostato-encoder-503/2.jpg" alt="Termostato encoder 503 2" width="49%">
+<img src="images/termostato-mobile/1.jpg" alt="Termostato mobile 1" width="32%"> <img src="images/termostato-mobile/2.jpg" alt="Termostato mobile 2" width="32%"> <img src="images/termostato-mobile/3.jpg" alt="Termostato mobile 3" width="32%">
+
+**Part list:**
+
+- [Scheda ESP32-C6](https://it.aliexpress.com/item/1005008268805480.html)
+- [Sensore di temperatura e umidità (SHT4x)](https://it.aliexpress.com/item/1005009954170157.html)
+- [Alimentazione / connettore](https://it.aliexpress.com/item/1005007676682081.html)
 
 ---
 
@@ -60,9 +66,15 @@ CLIMAORO è un sistema che:
 
 ---
 
-## 🔌 Termostato mobile
+## 🎛️ Termostato encoder integrato con 503
 
-<img src="images/termostato-mobile/1.jpg" alt="Termostato mobile 1" width="32%"> <img src="images/termostato-mobile/2.jpg" alt="Termostato mobile 2" width="32%"> <img src="images/termostato-mobile/3.jpg" alt="Termostato mobile 3" width="32%">
+<img src="images/termostato-encoder-503/1.jpg" alt="Termostato encoder 503 1" width="49%"> <img src="images/termostato-encoder-503/2.jpg" alt="Termostato encoder 503 2" width="49%">
+
+**Part list:**
+
+- [Scheda ESP32-S3](https://it.aliexpress.com/item/1005012374134834.html)
+- [Encoder rotativo](https://it.aliexpress.com/item/1005009260256313.html)
+- [Display](https://it.aliexpress.com/item/1005007171129437.html)
 
 ---
 
@@ -100,6 +112,12 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 ## 🛠️ Collettore
 
 <img src="images/collettore/1.jpg" alt="Collettore 1" width="32%"> <img src="images/collettore/2.jpg" alt="Collettore 2" width="32%"> <img src="images/collettore/3.jpg" alt="Collettore 3" width="32%">
+
+**Part list:**
+
+- [Scheda ESP32-C6](https://it.aliexpress.com/item/1005006678253557.html)
+- [Modulo relè (4+ canali)](https://it.aliexpress.com/item/1005007538301230.html)
+- [Optoisolatori](https://it.aliexpress.com/item/1005009598584430.html)
 
 ---
 
