@@ -50,9 +50,9 @@ CLIMAORO è un sistema che:
 
 **Part list:**
 
-- [Scheda ESP32-C6](https://it.aliexpress.com/item/1005008268805480.html)
+- [Scheda ESP32-C6](https://it.aliexpress.com/item/1005007676682081.html)
 - [Sensore di temperatura e umidità (SHT4x)](https://it.aliexpress.com/item/1005009954170157.html)
-- [Alimentazione / connettore](https://it.aliexpress.com/item/1005007676682081.html)
+- [Caricatore / alimentazione](https://it.aliexpress.com/item/1005008268805480.html)
 
 ---
 
@@ -72,9 +72,9 @@ CLIMAORO è un sistema che:
 
 **Part list:**
 
-- [Scheda ESP32-S3](https://it.aliexpress.com/item/1005012374134834.html)
-- [Encoder rotativo](https://it.aliexpress.com/item/1005009260256313.html)
-- [Display](https://it.aliexpress.com/item/1005007171129437.html)
+- [Scheda ESP32-S3](https://it.aliexpress.com/item/1005007171129437.html)
+- [Encoder rotativo](https://it.aliexpress.com/item/1005012374134834.html)
+- [Display](https://it.aliexpress.com/item/1005009260256313.html)
 
 ---
 
