@@ -80,11 +80,11 @@ I file di configurazione ESPHome sono pubblici su GitHub nel repository [climaor
 
 | File | Link |
 |------|------|
-| Config principale termostato (esempio italiano) | [termostato_esempio.yaml](https://raw.githubusercontent.com/UVAVIVA/climaoro-components/main/termostato_esempio.yaml) |
-| Config principale termostato (esempio inglese) | [termostato_example.yaml](https://raw.githubusercontent.com/UVAVIVA/climaoro-components/main/termostato_example.yaml) |
-| Package termostato | [packages/termostato.yaml](https://raw.githubusercontent.com/UVAVIVA/climaoro-components/main/packages/termostato.yaml) |
-| Package termostato con display | [packages/termostato_display.yaml](https://raw.githubusercontent.com/UVAVIVA/climaoro-components/main/packages/termostato_display.yaml) |
-| Package collettore | [packages/collettore.yaml](https://raw.githubusercontent.com/UVAVIVA/climaoro-components/main/packages/collettore.yaml) |
-| Package zona | [packages/zona.yaml](https://raw.githubusercontent.com/UVAVIVA/climaoro-components/main/packages/zona.yaml) |
+| Config principale termostato (esempio italiano) | [termostato_esempio.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/termostato_esempio.yaml) |
+| Config principale termostato (esempio inglese) | [termostato_example.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/termostato_example.yaml) |
+| Package termostato | [packages/termostato.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/termostato.yaml) |
+| Package termostato con display | [packages/termostato_display.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/termostato_display.yaml) |
+| Package collettore | [packages/collettore.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/collettore.yaml) |
+| Package zona | [packages/zona.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/zona.yaml) |
 
 Il file `secrets.yaml` (chiavi WiFi e API) non viene pubblicato: va creato localmente per ogni installazione.
