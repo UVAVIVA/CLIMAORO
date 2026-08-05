@@ -83,4 +83,8 @@ text_sensor:
     icon: "mdi:message-receive-text"
 
 packages:
-  - !include packages/termostato.yaml
+  termostato:
+    url: https://github.com/UVAVIVA/climaoro-components
+    files: [packages/termostato.yaml]
+    ref: main
+    refresh: 0d

@@ -80,12 +80,12 @@ I file di configurazione ESPHome sono pubblici su GitHub nel repository [climaor
 
 | File | Link |
 |------|------|
-| Config principale termostato (esempio italiano) | [termostato_esempio.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/termostato_esempio.yaml) |
-| Config principale termostato (esempio inglese) | [termostato_example.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/termostato_example.yaml) |
+| Termostato - esempio pronto da copiare (italiano) | [CLIMAORO_Termostato-Esempio.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Termostato-Esempio.yaml) |
+| Termostato - esempio pronto da copiare (inglese) | [CLIMAORO_Thermostat-Example.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Thermostat-Example.yaml) |
 | Package termostato | [packages/termostato.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/termostato.yaml) |
 | Package termostato con display | [packages/termostato_display.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/termostato_display.yaml) |
-| Config principale collettore (esempio italiano) | [collettore_esempio.yaml](https://github.com/UVAVIVA/CLIMAORO/blob/main/collettore_esempio.yaml) |
-| Config principale collettore (esempio inglese) | [collettore_example.yaml](https://github.com/UVAVIVA/CLIMAOROen/blob/main/collettore_example.yaml) |
+| Collettore - esempio pronto da copiare (italiano) | [CLIMAORO_Collettore-Esempio.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Collettore-Esempio.yaml) |
+| Collettore - esempio pronto da copiare (inglese) | [CLIMAORO_Manifold-Example.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Manifold-Example.yaml) |
 | Package collettore | [packages/collettore.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/collettore.yaml) |
 | Package zona | [packages/zona.yaml](https://github.com/UVAVIVA/climaoro-components/blob/main/packages/zona.yaml) |
 

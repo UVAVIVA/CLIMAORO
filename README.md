@@ -62,7 +62,7 @@ CLIMAORO è un sistema che:
 
 **Configurazione per la compilazione:**
 
-- [Config principale termostato (esempio italiano)](https://github.com/UVAVIVA/climaoro-components/blob/main/termostato_esempio.yaml)
+- [Config principale termostato - esempio pronto da copiare (italiano)](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Termostato-Esempio.yaml)
 
 ---
 
@@ -131,7 +131,7 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 
 **Configurazione per la compilazione:**
 
-- [Config principale collettore (esempio italiano)](https://github.com/UVAVIVA/CLIMAORO/blob/main/collettore_esempio.yaml)
+- [Config principale collettore - esempio pronto da copiare (italiano)](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Collettore-Esempio.yaml)
 
 ---
 

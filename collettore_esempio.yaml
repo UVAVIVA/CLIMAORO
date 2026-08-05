@@ -126,4 +126,8 @@ text_sensor:
     icon: "mdi:message-receive-text"
 
 packages:
-  - !include packages/collettore.yaml
+  collettore:
+    url: https://github.com/UVAVIVA/climaoro-components
+    files: [packages/collettore.yaml]
+    ref: main
+    refresh: 0d
