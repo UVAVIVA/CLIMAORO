@@ -56,4 +56,25 @@ Costruire è il motivo per cui questo progetto esiste.
 
 ---
 
+## 📜 Licenza e Responsabilità
+
+**CLIMAORO © 2026 by UVAVIVA** · Licenza: **MIT con Condizione di Attribuzione**
+
+**Termini**
+- ✅ Attribuzione richiesta (nel codice e sui dispositivi commerciali)
+- ✅ Uso commerciale permesso (con attribuzione)
+- ✅ Modifiche e derivati permessi
+- ✅ Uso, copia, distribuzione e vendita permessi
+
+**Disclaimer**
+Questo progetto è fornito **così com'è**, a scopo educativo e sperimentale.
+- ⚠️ Non certificato per uso produttivo
+- ⚠️ ⚡ **PERICOLO: gli interventi sull'impianto elettrico e termoidraulico devono essere eseguiti solo da personale qualificato**
+- ⚠️ Nessuna garanzia di alcun tipo
+- ⚠️ L'utente si assume ogni rischio
+
+**Rispettare sempre le norme elettriche e di sicurezza locali.**
+
+---
+
 **Costruito con passione, dal nulla.**

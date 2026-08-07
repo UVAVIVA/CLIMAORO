@@ -135,9 +135,24 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 
 ---
 
-## 📜 Licenza
+## 📜 Licenza e Responsabilità
 
-MIT License – Copyright (c) 2026 UVAVIVA
+**CLIMAORO © 2026 by UVAVIVA** · Licenza: **MIT con Condizione di Attribuzione**
+
+**Termini**
+- ✅ Attribuzione richiesta (nel codice e sui dispositivi commerciali)
+- ✅ Uso commerciale permesso (con attribuzione)
+- ✅ Modifiche e derivati permessi
+- ✅ Uso, copia, distribuzione e vendita permessi
+
+**Disclaimer**
+Questo progetto è fornito **così com'è**, a scopo educativo e sperimentale.
+- ⚠️ Non certificato per uso produttivo
+- ⚠️ ⚡ **PERICOLO: gli interventi sull'impianto elettrico e termoidraulico devono essere eseguiti solo da personale qualificato**
+- ⚠️ Nessuna garanzia di alcun tipo
+- ⚠️ L'utente si assume ogni rischio
+
+**Rispettare sempre le norme elettriche e di sicurezza locali.**
 
 ---
 
