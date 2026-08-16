@@ -76,3 +76,4 @@ Il case del termostato mobile è disponibile per la stampa 3D.
 - **File:** [termostato-ovale-19-c6.3mf](files/termostato-ovale-19-c6.3mf)
 - **Materiale consigliato:** PETG
 - **Nota:** il file può essere aperto solo con **OrcaSlicer** o **Flash Studio**
+- **Tutorial:** [Guida completa al montaggio](montaggio.md)
