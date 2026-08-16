@@ -4,9 +4,12 @@ Costruzione del termostato CLIMAORO: una scheda **ESP32** alimentata da un
 caricatore USB riciclato, collegata a un sensore di temperatura/umidità **SHT40**
 e inserita nel **case stampato in 3D** al posto del vecchio termostato a muro.
 
-> ⚠️ **Sicurezza:** il caricatore lavora collegato alla rete **230V**.
-> Prima di intervenire **stacca la corrente**. Se non hai dimestichezza con
-> l'elettricità e le saldature, fatti aiutare da un elettricista.
+> ⚠️ **PERICOLO – TENSIONE DI RETE (230V).** Questo montaggio lavora collegato
+> alla rete elettrica: **può causare scosse elettriche gravi, ustioni o morte.**
+> Prima di qualsiasi intervento **stacca la corrente**. Non toccare mai i
+> componenti interni con il dispositivo alimentato. **Se non hai esperienza con
+> l'elettricità, fai eseguire l'installazione da un elettricista qualificato**:
+> non mettere a rischio la tua incolumità per un termostato.
 
 ---
 
@@ -39,9 +42,7 @@ termostato mobile:
 | Saldatore + stagno                | Collegamenti elettrici       |
 | Filo (rosso, bianco, verde, giallo, nero) | Cablaggio            |
 
-<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/1.jpg" alt="Montaggio termostato 1" width="32%">
-<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/2.jpg" alt="Montaggio termostato 2" width="32%">
-<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/3.jpg" alt="Montaggio termostato 3" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/1.jpg" alt="Montaggio termostato 1" width="32%"> <img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/2.jpg" alt="Montaggio termostato 2" width="32%"> <img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/3.jpg" alt="Montaggio termostato 3" width="32%">
 
 ### 1. Aprire il caricatore
 
@@ -94,9 +95,7 @@ sensore:
 
 Verifica sempre i pin nel tuo file YAML prima di saldare.
 
-<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/4.jpg" alt="Montaggio termostato 4" width="32%">
-<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/5.jpg" alt="Montaggio termostato 5" width="32%">
-<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/6.jpg" alt="Montaggio termostato 6" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/4.jpg" alt="Montaggio termostato 4" width="32%"> <img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/5.jpg" alt="Montaggio termostato 5" width="32%"> <img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/6.jpg" alt="Montaggio termostato 6" width="32%">
 
 ### 3. Inserire i componenti nel case 3D
 
@@ -134,8 +133,10 @@ infilalo nel suo alloggiamento dedicato.
 
 ## Note
 
-- **Sicurezza:** il montaggio contiene tensione di rete (230V) all'interno del
-  caricatore. Lavora a corrente staccata e usa materiali isolati.
+- **⚠️ Sicurezza:** il montaggio contiene tensione di rete (230V) all'interno
+  del caricatore. **Lavora sempre a corrente staccata**, usa materiali isolati
+  e verifica i collegamenti prima di riattaccare la corrente. Non esporre il
+  dispositivo a umidità o contatti accidentali.
 - **Recupero:** il caricatore USB è un componente riciclato: basta che eroghi
   5V stabili e almeno ~1A.
 - **Riferimento:** questo tutorial è parte della documentazione ufficiale
