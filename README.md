@@ -60,6 +60,11 @@ CLIMAORO è un sistema che:
 - Materiale consigliato: **PETG**
 - Nota: il file può essere aperto solo con **OrcaSlicer** o **Flash Studio**
 
+**📋 Tutorial montaggio:**
+
+- [Guida completa al montaggio del termostato](docs/montaggio.md)
+- [Sito web - pagina Montaggio](https://UVAVIVA.github.io/CLIMAORO/montaggio/)
+
 **Configurazione per la compilazione:**
 
 - [Config principale termostato - esempio pronto da copiare (italiano)](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Termostato-Esempio.yaml)
