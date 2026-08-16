@@ -39,9 +39,9 @@ termostato mobile:
 | Saldatore + stagno                | Collegamenti elettrici       |
 | Filo (rosso, bianco, verde, giallo, nero) | Cablaggio            |
 
-<img src="../images/montaggio/1.jpg" alt="Montaggio termostato 1" width="32%">
-<img src="../images/montaggio/2.jpg" alt="Montaggio termostato 2" width="32%">
-<img src="../images/montaggio/3.jpg" alt="Montaggio termostato 3" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/1.jpg" alt="Montaggio termostato 1" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/2.jpg" alt="Montaggio termostato 2" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/3.jpg" alt="Montaggio termostato 3" width="32%">
 
 ### 1. Aprire il caricatore
 
@@ -94,9 +94,9 @@ sensore:
 
 Verifica sempre i pin nel tuo file YAML prima di saldare.
 
-<img src="../images/montaggio/4.jpg" alt="Montaggio termostato 4" width="32%">
-<img src="../images/montaggio/5.jpg" alt="Montaggio termostato 5" width="32%">
-<img src="../images/montaggio/6.jpg" alt="Montaggio termostato 6" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/4.jpg" alt="Montaggio termostato 4" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/5.jpg" alt="Montaggio termostato 5" width="32%">
+<img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/montaggio/6.jpg" alt="Montaggio termostato 6" width="32%">
 
 ### 3. Inserire i componenti nel case 3D
 
