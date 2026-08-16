@@ -137,6 +137,9 @@ infilalo nel suo alloggiamento dedicato.
   del caricatore. **Lavora sempre a corrente staccata**, usa materiali isolati
   e verifica i collegamenti prima di riattaccare la corrente. Non esporre il
   dispositivo a umidità o contatti accidentali.
+- **Responsabilità:** questo tutorial ha **scopo informativo e didattico**. Chi
+  esegue il montaggio lo fa a **proprio rischio**: l'autore declina ogni
+  responsabilità per danni a persone o cose derivanti dall'uso del dispositivo.
 - **Recupero:** il caricatore USB è un componente riciclato: basta che eroghi
   5V stabili e almeno ~1A.
 - **Riferimento:** questo tutorial è parte della documentazione ufficiale
