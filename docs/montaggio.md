@@ -5,11 +5,11 @@ caricatore USB riciclato, collegata a un sensore di temperatura/umidità **SHT40
 e inserita nel **case stampato in 3D** al posto del vecchio termostato a muro.
 
 > ⚠️ **PERICOLO – TENSIONE DI RETE (230V).** Questo montaggio lavora collegato
-> alla rete elettrica: **può causare scosse elettriche gravi, ustioni o morte.**
-> Prima di qualsiasi intervento **stacca la corrente**. Non toccare mai i
-> componenti interni con il dispositivo alimentato. **Se non hai esperienza con
-> l'elettricità, fai eseguire l'installazione da un elettricista qualificato**:
-> non mettere a rischio la tua incolumità per un termostato.
+> alla rete elettrica: il contatto con la tensione può provocare scosse
+> elettriche pericolose. Prima di qualsiasi intervento **stacca la corrente**.
+> Non toccare i componenti interni con il dispositivo alimentato. **Se non hai
+> esperienza con l'elettricità, fai eseguire l'installazione da un elettricista
+> qualificato.**
 
 ---
 
