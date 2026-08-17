@@ -131,6 +131,18 @@ infilalo nel suo alloggiamento dedicato.
 
 ---
 
+## Risoluzione problemi
+
+### Termostato si riavvia continuamente
+
+Se l'ESP32 si riavvia quando il Wi-Fi si connette o quando comunica con il collettore, il problema è quasi sempre l'alimentazione. I caricatori USB vecchi o di bassa qualità non reggono i picchi di corrente.
+
+**Soluzione:** aggiungi un condensatore elettrolitico da **470µF** tra 5V e GND, il più vicino possibile ai pin di alimentazione dell'ESP32. Il condensatore assorbe i picchi di corrente e stabilizza la tensione.
+
+Collegalo tra il pin **VIN** (o 5V) e **GND** dell'ESP32, con il terminale positivo (+) sul 5V e il terminale negativo (-) sul GND.
+
+---
+
 ## Note
 
 - **⚠️ Sicurezza:** il montaggio contiene tensione di rete (230V) all'interno
