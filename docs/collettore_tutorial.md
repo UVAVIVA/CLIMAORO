@@ -6,7 +6,7 @@
 
 Il collettore è il cervello dell'impianto centralizzato. È un ESP32-C6 (funzionano anche S3, C3 o altri modelli ESP32) che riceve i comandi dai termostati via ESP-NOW e aziona le valvole e il circolatore. Ogni collettore serve un gruppo di stanze e zone: alcune stanze hanno una valvola, altre ne hanno più di una.
 
-<img src="../images/collettore/1.jpg" alt="Collettore 1" width="32%"> <img src="../images/collettore/2.jpg" alt="Collettore 2" width="32%"> <img src="../images/collettore/3.jpg" alt="Collettore 3" width="32%">
+<img src="images/collettore/1.jpg" alt="Collettore 1" width="32%"> <img src="images/collettore/2.jpg" alt="Collettore 2" width="32%"> <img src="images/collettore/3.jpg" alt="Collettore 3" width="32%">
 
 ## Componenti necessari
 
@@ -96,7 +96,7 @@ Quando il relè si attiva, l'opto lo rileva e manda il feedback all'ESP32.
 
 ### Schema elettrico 220V
 
-<img src="../images/collettore/schema_220v.png" alt="Schema elettrico 220V" width="100%">
+<img src="images/collettore/schema_220v.jpg" alt="Schema elettrico 220V" width="100%">
 
 ## Parte Bassa Tensione
 
@@ -148,7 +148,7 @@ Il lato AC dell'optoisolatore si collega al COM del relè corrispondente. Questo
 
 ### Schema bassa tensione
 
-<img src="../images/collettore/schema_bassa_tensione.png" alt="Schema bassa tensione" width="100%">
+<img src="images/collettore/schema_bassa_tensione.jpg" alt="Schema bassa tensione" width="100%">
 
 ---
 
