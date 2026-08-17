@@ -1,0 +1,1358 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Sistema di termoregolazione a zone open source">
+      
+      
+      
+        <link rel="canonical" href="https://uvaviva.github.io/CLIMAORO/collettore_tutorial/">
+      
+      
+        <link rel="prev" href="../montaggio/">
+      
+      
+        <link rel="next" href="../documentazione/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Montaggio collettore - CLIMAORO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#il-collettore" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="CLIMAORO" class="md-header__button md-logo" aria-label="CLIMAORO" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CLIMAORO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Montaggio collettore
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Passa alla modalità scura"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passa alla modalità scura" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Passa alla modalità chiara"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passa alla modalità chiara" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UVAVIVA/CLIMAORO" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    UVAVIVA/CLIMAORO
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sistema/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Il sistema
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../software/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Software
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../stato/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Stato e sviluppi
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../collabora/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Collabora
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../montaggio/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Montaggio termostato
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Montaggio collettore
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../documentazione/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Documentazione
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CLIMAORO" class="md-nav__button md-logo" aria-label="CLIMAORO" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CLIMAORO
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UVAVIVA/CLIMAORO" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    UVAVIVA/CLIMAORO
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sistema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Il sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stato/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stato e sviluppi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collabora/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collabora
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../montaggio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Montaggio termostato
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Montaggio collettore
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Montaggio collettore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cos'è
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componenti-necessari" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Componenti necessari
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alimentazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alimentazione
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collegamento-rele-valvole" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento relè → valvole
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collegamento-optoisolatori-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collegamento optoisolatori → feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rele-circolatore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relè circolatore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logica-di-sicurezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logica di sicurezza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risoluzione-problemi-comuni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risoluzione problemi comuni
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risoluzione problemi comuni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brownout-e-riavvii-dellesp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brownout e riavvii dell'ESP32
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optoisolatori-che-non-confermano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optoisolatori che non confermano
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valvole-che-non-si-aprono" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valvole che non si aprono
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circolatore-che-non-parte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Circolatore che non parte
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiali-e-collegamenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiali e collegamenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-220v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 220V
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parte 220V">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alimentazione-di-rete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alimentazione di rete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rele-delle-valvole" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relè delle valvole
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rele-del-circolatore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relè del circolatore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optoisolatori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optoisolatori
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-elettrico-220v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema elettrico 220V
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-bassa-tensione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte Bassa Tensione
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parte Bassa Tensione">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alimentazione-5v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alimentazione 5V
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alimentazione-33v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alimentazione 3.3V
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connessioni-esp32-rele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connessioni ESP32 → Relè
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connessioni-optoisolatori-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connessioni Optoisolatori → ESP32
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connessioni-optoisolatori-rele-lato-ac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connessioni optoisolatori → relè (lato AC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-bassa-tensione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema bassa tensione
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentazione/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentazione
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="il-collettore">Il Collettore<a class="headerlink" href="#il-collettore" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>⚠️ <strong>PERICOLO – TENSIONE DI RETE (230V).</strong> Il collettore lavora collegato alla rete elettrica: il contatto con la tensione può provocare scosse elettriche pericolose. Prima di qualsiasi intervento <strong>stacca la corrente</strong>. Non toccare i componenti interni con il dispositivo alimentato. <strong>Se non hai esperienza con l'elettricità, fai eseguire l'installazione da un elettricista qualificato.</strong></p>
+</blockquote>
+<h2 id="cose">Cos'è<a class="headerlink" href="#cose" title="Permanent link">&para;</a></h2>
+<p>Il collettore è il cervello dell'impianto centralizzato. È un ESP32-C6 (funzionano anche S3, C3 o altri modelli ESP32) che riceve i comandi dai termostati via ESP-NOW e aziona le valvole e il circolatore. Ogni collettore serve un gruppo di stanze e zone: alcune stanze hanno una valvola, altre ne hanno più di una.</p>
+<p><img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/collettore/1.jpg" alt="Collettore 1" width="32%"> <img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/collettore/2.jpg" alt="Collettore 2" width="32%"> <img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/collettore/3.jpg" alt="Collettore 3" width="32%"></p>
+<h2 id="componenti-necessari">Componenti necessari<a class="headerlink" href="#componenti-necessari" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://it.aliexpress.com/item/1005006678253557.html">Scheda ESP32-C6</a> (o S3/C3): cervello del collettore</li>
+<li><a href="https://it.aliexpress.com/item/1005007538301230.html">Modulo relè (4+ canali)</a>: un relè per ogni valvola + un relè per il circolatore</li>
+<li><a href="https://it.aliexpress.com/item/1005009598584430.html">Optoisolatori</a>: un optoisolatore per ogni valvola, fornisce il feedback dello stato</li>
+<li>Caricatore/Alimentatore: uno o più, converte 220V in 5V per ESP32 e relè</li>
+</ul>
+<h2 id="alimentazione">Alimentazione<a class="headerlink" href="#alimentazione" title="Permanent link">&para;</a></h2>
+<p>Il sistema funziona su due livelli di tensione:</p>
+<ul>
+<li>220V → entra nel caricatore, che converte in 5V per alimentare l'ESP32 e le schede relè</li>
+<li>3.3V → alimenta gli optoisolatori e i segnali dei relè</li>
+</ul>
+<p>Lato AC (220V): gli optoisolatori si collegano al neutro.</p>
+<h2 id="collegamento-rele-valvole">Collegamento relè → valvole<a class="headerlink" href="#collegamento-rele-valvole" title="Permanent link">&para;</a></h2>
+<p>Ogni relè ha tre terminali:</p>
+<ul>
+<li>COM (comune): collegato alla valvola e all'optoisolatore</li>
+<li>NC (normalmente chiuso): collegato al vecchio termostato, che può continuare a funzionare come backup</li>
+<li>NO (normalmente aperto): collegato ai 220V (o al voltaggio della valvola, se diverso)</li>
+</ul>
+<p>Quando il relè si attiva, il circuito passa da NC a NO: il vecchio termostato si disconnette e la valvola riceve corrente dal nuovo alimentatore. Se il relè torna a riposo, il circuito ripassa su NC e il vecchio termostato riprende il controllo.</p>
+<h2 id="collegamento-optoisolatori-feedback">Collegamento optoisolatori → feedback<a class="headerlink" href="#collegamento-optoisolatori-feedback" title="Permanent link">&para;</a></h2>
+<p>L'optoisolatore si collega al COM del relè. Quando il relè si attiva e la valvola riceve corrente, l'optoisolatore lo rileva e manda il segnale di conferma all'ESP32. In questo modo il collettore sa che la valvola si è effettivamente aperta.</p>
+<p>Se il relè è attivo ma l'optoisolatore non conferma, il collettore segnala un errore (il relè potrebbe essere guasto o la valvola bloccata).</p>
+<h2 id="rele-circolatore">Relè circolatore<a class="headerlink" href="#rele-circolatore" title="Permanent link">&para;</a></h2>
+<p>Il circolatore ha un relè dedicato. A differenza delle valvole, qui si usano solo COM e NO: quando il relè si attiva, il circuito si chiude e il circolatore parte. Il collettore gestisce un ritardo prima di avviarlo (aspetta che almeno una valvola sia aperta) e uno spegnimento ritardato (dopo l'ultima valvola che si chiude).</p>
+<h2 id="logica-di-sicurezza">Logica di sicurezza<a class="headerlink" href="#logica-di-sicurezza" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Timeout per zona: ogni valvola ha un limite di tempo massimo di apertura (2 ore). Se un termostato smette di comunicare (es. si disconnette), il collettore spegne la valvola dopo il timeout per evitare che rimanga accesa senza controllo. Se il termostato torna online e chiede di riaccendere, il collettore lo fa subito.</li>
+<li>Controllo coerenza: ogni 2 minuti il collettore verifica che lo stato dei relè coincida con il feedback degli optoisolatori. Se c'è una discrepanza, segnala un errore.</li>
+<li>Allarme circolatore: se il circolatore non parte nonostante la richiesta, il collettore invia un allarme a tutti i termostati.</li>
+</ul>
+<h2 id="risoluzione-problemi-comuni">Risoluzione problemi comuni<a class="headerlink" href="#risoluzione-problemi-comuni" title="Permanent link">&para;</a></h2>
+<h3 id="brownout-e-riavvii-dellesp32">Brownout e riavvii dell'ESP32<a class="headerlink" href="#brownout-e-riavvii-dellesp32" title="Permanent link">&para;</a></h3>
+<p>Se l'ESP32 si riavvia quando i relè si attivano (soprattutto con più valvole contemporaneamente), il problema è quasi sempre l'alimentazione. Il picco di corrente assorbito dalle bobine dei relè fa crollare la tensione sotto i 3V e l'ESP32 si riavvia da solo (brownout).</p>
+<p><strong>Soluzione:</strong> condensatori di buffer sull'alimentazione 5V:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Valore</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elettrolitico</td>
+<td><strong>470µF</strong></td>
+<td>Buffer generale, assorbe i picchi di corrente dei relè</td>
+</tr>
+<tr>
+<td>Elettrolitico</td>
+<td><strong>1000µF</strong></td>
+<td>Per sistemi con 4+ relè, maggiore capacità di buffer</td>
+</tr>
+<tr>
+<td>Ceramico</td>
+<td><strong>100nF (0.1µF)</strong></td>
+<td>Filtra il rumore ad alta frequenza, va vicino ai pin di alimentazione dell'ESP32</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Collegamento:</strong> i condensatori vanno posizionati tra 5V e GND, il più vicino possibile all'ESP32. Il ceramico si mette direttamente sui pin VIN/GND della scheda, l'elettrolitico più grande sul rail di alimentazione.</p>
+<p><strong>Nota importante:</strong> il condensatore ceramico (100nF) NON sostituisce l'elettrolitico e viceversa. L'elettrolitico gestisce i picchi grossi (relè), il ceramico filtra il rumore fine. Usali insieme.</p>
+<h3 id="optoisolatori-che-non-confermano">Optoisolatori che non confermano<a class="headerlink" href="#optoisolatori-che-non-confermano" title="Permanent link">&para;</a></h3>
+<p>Se il relè è attivo ma il feedback non arriva:</p>
+<ol>
+<li>Verificare che l'optoisolatore sia collegato al COM del relè giusto</li>
+<li>Controllare che il GPIO di feedback non sia già usato per altro</li>
+<li>Misurare con multimetro se il pin dell'opto cambia stato quando il relè si attiva</li>
+</ol>
+<h3 id="valvole-che-non-si-aprono">Valvole che non si aprono<a class="headerlink" href="#valvole-che-non-si-aprono" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Verificare che il relè sia effettivamente attivo (LED sulla scheda relè)</li>
+<li>Controllare che il filo dalla valvola al relè sia ben collegato</li>
+<li>Misurare la tensione ai morsetti della valvola: deve essere ~220V quando il relè è attivo</li>
+<li>Controllare che la valvola non sia bloccata meccanicamente (caleffettuarla a mano)</li>
+</ol>
+<h3 id="circolatore-che-non-parte">Circolatore che non parte<a class="headerlink" href="#circolatore-che-non-parte" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Verificare che il relè del circolatore sia attivo</li>
+<li>Controllare il ritardo di avvio (il circolatore parte solo dopo che almeno una valvola è aperta)</li>
+<li>Assicurarsi che la tensione di uscita sia corretta</li>
+</ol>
+<h2 id="materiali-e-collegamenti">Materiali e collegamenti<a class="headerlink" href="#materiali-e-collegamenti" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Filo 1.5mm² per alimentazione 220V (L e N)</li>
+<li>Filo AWG24 o AWG20 per COM, NO e NC dei relè</li>
+<li>Morsettiere per giunzioni fisse</li>
+<li>Cappucci (crimp) per connessioni rapide</li>
+<li>Connettori a scatto per collegamenti senza saldatura</li>
+</ul>
+<h2 id="parte-220v">Parte 220V<a class="headerlink" href="#parte-220v" title="Permanent link">&para;</a></h2>
+<h3 id="alimentazione-di-rete">Alimentazione di rete<a class="headerlink" href="#alimentazione-di-rete" title="Permanent link">&para;</a></h3>
+<p>La rete domestica 220V entra nel caricatore tramite le linee L (fase) e N (neutro). Il caricatore converte i 220V in 5V per alimentare l'ESP32 e le schede relè.</p>
+<h3 id="rele-delle-valvole">Relè delle valvole<a class="headerlink" href="#rele-delle-valvole" title="Permanent link">&para;</a></h3>
+<p>Ogni valvola è controllata da un relè a tre terminali:</p>
+<ul>
+<li><strong>NO</strong> → collegato alla fase (L) a 220V</li>
+<li><strong>COM</strong> → collegato alla valvola e all'optoisolatore</li>
+<li><strong>NC</strong> → collegato al vecchio termostato (fallback manuale)</li>
+</ul>
+<p>Quando il relè si attiva, il circuito passa da NC a NO: la valvola riceve corrente e si apre. Quando torna a riposo, il vecchio termostato riprende il controllo.</p>
+<blockquote>
+<p><strong>Nota:</strong> Questa guida descrive un impianto a 220V in corrente alternata. Per impianti con voltaggio diverso o in corrente continua, è necessario modificare i collegamenti in base alle specifiche delle valvole e dell'alimentazione utilizzata.</p>
+</blockquote>
+<h3 id="rele-del-circolatore">Relè del circolatore<a class="headerlink" href="#rele-del-circolatore" title="Permanent link">&para;</a></h3>
+<p>Il circolatore ha un relè dedicato con solo COM e NO:</p>
+<ul>
+<li><strong>COM</strong> → ingresso dal circolatore</li>
+<li><strong>NO</strong> → uscita consenso circolatore</li>
+</ul>
+<p>Quando il relè si attiva, il circolatore parte. Il collettore gestisce un ritardo di avvio e spegnimento ritardato.</p>
+<h3 id="optoisolatori">Optoisolatori<a class="headerlink" href="#optoisolatori" title="Permanent link">&para;</a></h3>
+<p>Ogni optoisolatore monitora lo stato del relè corrispondente:</p>
+<ul>
+<li><strong>N</strong> → neutro (condiviso con il caricatore)</li>
+<li><strong>COM</strong> → collegato al COM del relè</li>
+</ul>
+<p>Quando il relè si attiva, l'opto lo rileva e manda il feedback all'ESP32.</p>
+<h3 id="schema-elettrico-220v">Schema elettrico 220V<a class="headerlink" href="#schema-elettrico-220v" title="Permanent link">&para;</a></h3>
+<p><img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/collettore/schema_220v.jpg" alt="Schema elettrico 220V" width="100%"></p>
+<h2 id="parte-bassa-tensione">Parte Bassa Tensione<a class="headerlink" href="#parte-bassa-tensione" title="Permanent link">&para;</a></h2>
+<h3 id="alimentazione-5v">Alimentazione 5V<a class="headerlink" href="#alimentazione-5v" title="Permanent link">&para;</a></h3>
+<p>Il caricatore fornisce 5V che alimentano:</p>
+<ul>
+<li><strong>ESP32-C6</strong> → attraverso il pin VIN o 5V della scheda</li>
+<li><strong>Scheda relè</strong> → i relè ricevono 5V per le bobine</li>
+</ul>
+<p>Il GND del caricatore va collegato al GND dell'ESP32 e della scheda relè.</p>
+<h3 id="alimentazione-33v">Alimentazione 3.3V<a class="headerlink" href="#alimentazione-33v" title="Permanent link">&para;</a></h3>
+<p>L'ESP32 fornisce 3.3V dal pin dedicato. Questa tensione alimenta:</p>
+<ul>
+<li><strong>Optoisolatori</strong> → ogni opto riceve 3.3V per il lato digitale</li>
+<li><strong>Segnali dei relè</strong> → i pin dei relè operano a 3.3V</li>
+</ul>
+<p>Il GND è comune a tutto il sistema.</p>
+<h3 id="connessioni-esp32-rele">Connessioni ESP32 → Relè<a class="headerlink" href="#connessioni-esp32-rele" title="Permanent link">&para;</a></h3>
+<p>Ogni relè è controllato da un pin GPIO dell'ESP32. Quando il GPIO va alto (3.3V), il relè si attiva.</p>
+<table>
+<thead>
+<tr>
+<th>Zona</th>
+<th>Pin Relè</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPIO0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GPIO1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPIO10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GPIO11</td>
+</tr>
+<tr>
+<td>Circolatore</td>
+<td>GPIO3</td>
+</tr>
+<tr>
+<td>LED</td>
+<td>GPIO8</td>
+</tr>
+</tbody>
+</table>
+<h3 id="connessioni-optoisolatori-esp32">Connessioni Optoisolatori → ESP32<a class="headerlink" href="#connessioni-optoisolatori-esp32" title="Permanent link">&para;</a></h3>
+<p>Ogni optoisolatore fornisce il feedback dello stato del relè corrispondente. Quando il relè si attiva e l'opto rileva la corrente, manda un segnale al GPIO dell'ESP32.</p>
+<table>
+<thead>
+<tr>
+<th>Zona</th>
+<th>Pin Feedback</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPIO20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GPIO21</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPIO22</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GPIO23</td>
+</tr>
+</tbody>
+</table>
+<h3 id="connessioni-optoisolatori-rele-lato-ac">Connessioni optoisolatori → relè (lato AC)<a class="headerlink" href="#connessioni-optoisolatori-rele-lato-ac" title="Permanent link">&para;</a></h3>
+<p>Il lato AC dell'optoisolatore si collega al COM del relè corrispondente. Questo permette all'opto di rilevare quando il relè è attivo e la valvola riceve corrente.</p>
+<h3 id="schema-bassa-tensione">Schema bassa tensione<a class="headerlink" href="#schema-bassa-tensione" title="Permanent link">&para;</a></h3>
+<p><img src="https://raw.githubusercontent.com/UVAVIVA/CLIMAORO/main/docs/images/collettore/schema_bassa_tensione.jpg" alt="Schema bassa tensione" width="100%"></p>
+<hr />
+<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>⚠️ Sicurezza:</strong> il collettore contiene tensione di rete (230V). <strong>Lavora sempre a corrente staccata</strong>, usa materiali isolati e verifica i collegamenti prima di riattaccare la corrente. Non esporre il dispositivo a umidità o contatti accidentali.</li>
+<li><strong>Responsabilità:</strong> questo tutorial ha <strong>scopo informativo e didattico</strong>. Non è un prodotto industriale, ma un dispositivo <strong>artigianale</strong>, costruito e usato <strong>senza alcuna garanzia</strong>. Chi esegue il montaggio lo fa a <strong>proprio rischio e si assume la responsabilità</strong> per danni a persone o cose derivanti dall'uso del dispositivo.</li>
+<li><strong>Riferimento:</strong> questo tutorial è parte della documentazione ufficiale <a href="https://github.com/UVAVIVA/CLIMAORO">CLIMAORO su GitHub</a>.</li>
+</ul>
+<p><strong>📋 Tutorial montaggio:</strong></p>
+<ul>
+<li><a href="../montaggio/">Guida completa al montaggio del termostato</a></li>
+<li><a href="https://UVAVIVA.github.io/CLIMAORO/montaggio/">Sito web - pagina Montaggio</a></li>
+</ul>
+<p><strong>Configurazione per la compilazione:</strong></p>
+<ul>
+<li><a href="https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Collettore-Esempio.yaml">Config principale collettore - esempio pronto da copiare (italiano)</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
