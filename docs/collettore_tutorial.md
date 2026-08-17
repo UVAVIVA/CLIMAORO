@@ -50,6 +50,45 @@ Il circolatore ha un relè dedicato. A differenza delle valvole, qui si usano so
 - Controllo coerenza: ogni 2 minuti il collettore verifica che lo stato dei relè coincida con il feedback degli optoisolatori. Se c'è una discrepanza, segnala un errore.
 - Allarme circolatore: se il circolatore non parte nonostante la richiesta, il collettore invia un allarme a tutti i termostati.
 
+## Risoluzione problemi comuni
+
+### Brownout e riavvii dell'ESP32
+
+Se l'ESP32 si riavvia quando i relè si attivano (soprattutto con più valvole contemporaneamente), il problema è quasi sempre l'alimentazione. Il picco di corrente assorbito dalle bobine dei relè fa crollare la tensione sotto i 3V e l'ESP32 si riavvia da solo (brownout).
+
+**Soluzione:** condensatori di buffer sull'alimentazione 5V:
+
+| Tipo | Valore | Uso |
+|------|--------|-----|
+| Elettrolitico | **470µF** | Buffer generale, assorbe i picchi di corrente dei relè |
+| Elettrolitico | **1000µF** | Per sistemi con 4+ relè, maggiore capacità di buffer |
+| Ceramico | **100nF (0.1µF)** | Filtra il rumore ad alta frequenza, va vicino ai pin di alimentazione dell'ESP32 |
+
+**Collegamento:** i condensatori vanno posizionati tra 5V e GND, il più vicino possibile all'ESP32. Il ceramico si mette direttamente sui pin VIN/GND della scheda, l'elettrolitico più grande sul rail di alimentazione.
+
+**Nota importante:** il condensatore ceramico (100nF) NON sostituisce l'elettrolitico e viceversa. L'elettrolitico gestisce i picchi grossi (relè), il ceramico filtra il rumore fine. Usali insieme.
+
+### Optoisolatori che non confermano
+
+Se il relè è attivo ma il feedback non arriva:
+
+1. Verificare che l'optoisolatore sia collegato al COM del relè giusto
+2. Controllare che il GPIO di feedback non sia già usato per altro
+3. Misurare con multimetro se il pin dell'opto cambia stato quando il relè si attiva
+
+### Valvole che non si aprono
+
+1. Verificare che il relè sia effettivamente attivo (LED sulla scheda relè)
+2. Controllare che il filo dalla valvola al relè sia ben collegato
+3. Misurare la tensione ai morsetti della valvola: deve essere ~220V quando il relè è attivo
+4. Controllare che la valvola non sia bloccata meccanicamente (caleffettuarla a mano)
+
+### Circolatore che non parte
+
+1. Verificare che il relè del circolatore sia attivo
+2. Controllare il ritardo di avvio (il circolatore parte solo dopo che almeno una valvola è aperta)
+3. Assicurarsi che la tensione di uscita sia corretta
+
 ## Materiali e collegamenti
 
 - Filo 1.5mm² per alimentazione 220V (L e N)
