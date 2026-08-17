@@ -138,6 +138,11 @@ Non è necessario avere esperienza in tutti gli ambiti, ma è importante avere *
 
 - [Config principale collettore - esempio pronto da copiare (italiano)](https://github.com/UVAVIVA/climaoro-components/blob/main/CLIMAORO_Collettore-Esempio.yaml)
 
+**📋 Tutorial montaggio:**
+
+- [Guida completa al montaggio del collettore](docs/collettore_tutorial.md)
+- [Sito web - pagina Montaggio Collettore](https://UVAVIVA.github.io/CLIMAORO/collettore_tutorial/)
+
 ---
 
 ## 📜 Licenza e Responsabilità
